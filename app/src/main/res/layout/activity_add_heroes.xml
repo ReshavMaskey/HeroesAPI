@@ -18,10 +18,10 @@
     <EditText
         android:id="@+id/txtDesc"
         android:hint="enter desc"
-        android:inputType="numberDecimal"
         android:layout_margin="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 
 
     <Button
@@ -29,5 +29,6 @@
         android:layout_height="wrap_content"
         android:text="Add Hero"
         android:id="@+id/btnAddHero"/>
+
 
 </LinearLayout>

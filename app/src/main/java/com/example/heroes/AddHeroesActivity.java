@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import api.APIInterface;
@@ -16,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AddHeroesActivity extends AppCompatActivity {
 
+    ImageView imgView;
     Button btnAdd;
     EditText txtName,txtDesc;
 
@@ -24,8 +26,8 @@ public class AddHeroesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_heroes);
-        txtDesc = findViewById(R.id.txtHeroName);
-        txtName = findViewById(R.id.txtDesc);
+        txtDesc = findViewById(R.id.txtDesc);
+        txtName = findViewById(R.id.txtHeroName);
         btnAdd = findViewById(R.id.btnAddHero);
 btnAdd.setOnClickListener(new View.OnClickListener() {
     @Override

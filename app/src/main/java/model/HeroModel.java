@@ -1,22 +1,25 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class HeroModel {
-    private int id;
+
+    private String _id;
     private String name;
     private String desc;
 
-    public HeroModel(int id, String name, String desc) {
-        this.id = id;
+    public HeroModel(String id, String name, String desc) {
+        this._id = id;
         this.name = name;
         this.desc = desc;
     }
 
-    public int getId() {
-        return id;
+    public String getId() {
+        return _id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(String id) {
+        this._id = id;
     }
 
     public String getName() {

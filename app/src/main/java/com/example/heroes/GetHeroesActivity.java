@@ -47,7 +47,7 @@ public class GetHeroesActivity extends AppCompatActivity {
 //        stringsArray = new ArrayList<>();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://dummy.restapiexample.com/api/v1/")
+                .baseUrl(APIInterface.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
         APIInterface heroAPI = retrofit.create(APIInterface.class);
 
@@ -68,7 +68,6 @@ public class GetHeroesActivity extends AppCompatActivity {
                     content += "Hero Name: " + hero.getName()+ "\n";
                     content += "Hero Description: " + hero.getDesc() + "\n";
                     content += "-------------------------------------\n";
-
                     lstEmployee.append(content);
 //                    stringsArray.add("Emp Id: "+employee.getEmpId()+"\n"+"Name: "+
 //                            employee.getEmployee_name()+"\n"+
@@ -80,7 +79,7 @@ public class GetHeroesActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<HeroModel>> call, Throwable t) {
-
+                System.out.println("Error :"+t.getLocalizedMessage());
             }
         });
     }

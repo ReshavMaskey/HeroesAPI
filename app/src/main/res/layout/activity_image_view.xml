@@ -4,10 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageViewActivity">
+    tools:context=".ImageViewActivity"
+    android:orientation="vertical">
 
     <ImageView android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/imgView"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddImage"
+        android:text="Update Hero"/>
 </LinearLayout>

@@ -3,6 +3,7 @@ package api;
 import java.util.List;
 
 import model.HeroModel;
+import model.LoginResponses;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -28,6 +29,11 @@ public interface APIInterface {
     @POST("heroes")
     Call<Void> addHero(@Field("name") String name,@Field("desc") String desc);
 
-
+    @FormUrlEncoded
+    @POST("users/login")
+    Call<LoginResponses> checkUser(@Field("username")String username,@Field("password") String password);
+    @FormUrlEncoded
+    @POST("users/signup")
+    Call<LoginResponses> signUp(@Field("username")String username,@Field("password") String password);
 
 }

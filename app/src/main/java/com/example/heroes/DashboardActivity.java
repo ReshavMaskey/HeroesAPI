@@ -39,7 +39,7 @@ Button btnAdd,btnDisplay,btnUpdate,btnDelete;
                 startActivity(iii);
                 break;
             case R.id.btnDisplay:
-                Intent iiii = new Intent(DashboardActivity.this,GetHeroesActivity.class);
+                Intent iiii = new Intent(DashboardActivity.this,HeroesRecyclerViewActivity.class);
                 startActivity(iiii);
                 break;
                 default:

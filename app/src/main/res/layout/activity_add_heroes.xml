@@ -16,6 +16,7 @@
     <ImageView android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/chooseImageView"
+        android:src="@drawable/ic_launcher_foreground"
         android:layout_margin="30dp"
         />
 

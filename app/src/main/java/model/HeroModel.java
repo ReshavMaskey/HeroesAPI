@@ -7,6 +7,23 @@ public class HeroModel {
     private String _id;
     private String name;
     private String desc;
+    private String imageName;
+
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
 
     public HeroModel(String id, String name, String desc) {
         this._id = id;
@@ -14,13 +31,6 @@ public class HeroModel {
         this.desc = desc;
     }
 
-    public String getId() {
-        return _id;
-    }
-
-    public void setId(String id) {
-        this._id = id;
-    }
 
     public String getName() {
         return name;

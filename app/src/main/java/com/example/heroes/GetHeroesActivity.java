@@ -18,6 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GetHeroesActivity extends AppCompatActivity {
 
+//    TextView lstEmployee;
     TextView lstEmployee;
     TextView txtTotal;
     //    ListView listView;
@@ -29,7 +30,7 @@ public class GetHeroesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_heroes);
-        lstEmployee = findViewById(R.id.lstEmployee);
+        lstEmployee = findViewById(R.id.lstEmployeee);
         txtTotal = findViewById(R.id.txtTotalEmp);
 //        listView = findViewById(R.id.lstEmployee);
 
@@ -64,7 +65,7 @@ public class GetHeroesActivity extends AppCompatActivity {
                 lstEmployee.setText("");
                 for (HeroModel hero : employeeList) {
                     String content = "";
-                    content += "ID: " + hero.getId() + "\n";
+                    content += "ID: " + hero.get_id() + "\n";
                     content += "Hero Name: " + hero.getName()+ "\n";
                     content += "Hero Description: " + hero.getDesc() + "\n";
                     content += "-------------------------------------\n";
